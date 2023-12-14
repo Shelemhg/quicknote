@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Overview
 
-## Getting Started
+Quick Note is a full CRUD application developed using React, Next.js, and Tailwind CSS, integrated with MongoDB for data storage. The primary goal of this project is to provide users with a simple yet powerful tool to take quick notes. The application allows users to add a title and description for each note, which are then stored in a MongoDB cloud database.
 
-First, run the development server:
+## Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The purpose of Quick Note is to enhance my skills as a software engineer by building a real-world application that covers the entire CRUD (Create, Read, Update, Delete) functionality. This project serves as a practical learning experience in developing a full-stack application, integrating with a cloud database, and deploying a functional web application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Software Demo Video
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[![Software Demo Video](https://img.youtube.com/vi/nF5sDHjkcIA/hqdefault.jpg)](https://www.youtube.com/embed/nF5sDHjkcIA)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The demo showcases a 4-5 minute walkthrough of the Quick Note application in action. It includes a demonstration of how to use the application, a walkthrough of the codebase, and a view of the MongoDB cloud database.
 
-## Learn More
+# Cloud Database
 
-To learn more about Next.js, take a look at the following resources:
+## MongoDB
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Quick Note utilizes MongoDB as the cloud database. MongoDB is a NoSQL document database that provides flexibility and scalability for storing and managing data. The database stores notes created by users, each represented as a document with title and description fields.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Database Structure
 
-## Deploy on Vercel
+The database structure is simple and revolves around a collection named "notes." Each document in the "notes" collection contains the following fields:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `_id`: MongoDB ObjectId (automatically generated unique identifier)
+- `title`: Title of the note
+- `description`: Description of the note
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Development Environment
+
+The development of Quick Note was carried out using the following tools and technologies:
+
+- **React**: A JavaScript library for building user interfaces.
+- **Next.js**: A React framework for building server-side rendered and statically generated web applications.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **MongoDB Atlas**: A cloud database service for MongoDB.
+
+# Useful Websites
+
+- [React Documentation](https://reactjs.org/)
+- [Next.js Documentation](https://nextjs.org/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
+- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
+
+# Future Work
+
+While Quick Note is functional, there are several areas for improvement and future enhancements:
+
+- Implement user authentication for secure note creation and management.
+- Enhance the user interface for a more visually appealing design.
+- Add search functionality for efficiently locating specific notes.
+- Implement pagination for better organization of notes as the database grows.
+- Optimize the application for performance and responsiveness on various devices.
